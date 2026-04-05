@@ -1,0 +1,210 @@
+/* CSS reset */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(249, 240, 229);
+}
+
+/* CSS variables */
+:root {
+    --navbar-height: 59px
+}
+
+/* Navigation Bar */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+}
+
+#logo img {
+    margin: 10px 10px;
+    height: 45px;
+}
+
+#navbar ul {
+    display: flex;
+    font-family: 'Playfair Display', serif;
+}
+
+#navbar::before {
+    content: "";
+    background-color: rgb(0, 0, 0);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 3;
+    z-index: -1;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem
+}
+
+#navbar ul li a {
+    display: block;
+    padding: 3px 42px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+}
+
+#navbar ul li a:hover {
+    color: black;
+    background-color: white;
+}
+
+/* HOME section */
+#home {
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 410px;
+}
+
+#home:before {
+    content: "";
+    background: url('bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    height: 400px;
+    width: 100%;
+    opacity: 0.9;
+    z-index: -1;
+}
+
+#home h1 {
+    color: white;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+#home p {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+/* Services centre */
+#services {
+    margin: 34px;
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid brown;
+    padding: 34px;
+    margin: 25px 6px;
+    border-radius: 28px;
+    background-color: rgb(225, 213, 233);
+}
+
+#services .box img {
+    height: 156px;
+    display: block;
+    margin: auto;
+}
+
+#services .box p {
+    font-family: 'Playfair Display', serif;
+}
+
+
+/* Client-Section */
+#client-section {
+    height: 344px;
+}
+
+#client-section::before {
+    content: "";
+    position: absolute;
+    background: url('bg2.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.5;
+}
+
+#clients {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#clients img {
+    height: 100px;
+}
+
+.c-item {
+    padding: 24px;
+}
+
+/* Contact-section */
+#contact-box {
+    margin: 0px 50px;
+}
+
+#contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 300px;
+    z-index: -1;
+    opacity: 0.7;
+    background: url('contact.png') no-repeat center center/cover;
+}
+
+.form-group {
+    margin: 3px 5px;
+    padding: 5px 3px;
+
+}
+
+.quiry input {
+    width: 300px;
+    height: 100px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    padding: 9px 9px;
+}
+
+/* utility classes */
+.primary {
+    font-size: 2.8rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.secondary {
+    font-size: 2.3rem;
+    padding: 12px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn {
+    padding: 6px 20px;
+    border: 2px solid white;
+    background-color: brown;
+    color: white;
+    margin: 17px;
+    font-size: 1.5 rem;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+.centre {
+    text-align: center;
+}
